@@ -1,0 +1,53 @@
+{
+  "name": "YYCategories",
+  "summary": "A manager to get iOS keyboard views, frames and transform.",
+  "version": "1.0.4",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ibireme": "ibireme@gmail.com"
+  },
+  "social_media_url": "http://blog.ibireme.com",
+  "homepage": "https://github.com/ibireme/YYCategories",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "http": "http://120.79.83.17:80/frameworks/YYCategories/1.0.4/zip",
+    "type": "zip"
+  },
+  "requires_arc": true,
+  "source_files": "YYCategories/**/*.{h,m}",
+  "public_header_files": "YYCategories/**/*.{h}",
+  "ios": {
+    "exclude_files": [
+      "YYCategories/Foundation/NSObject+YYAddForARC.{h,m}",
+      "YYCategories/Foundation/NSThread+YYAdd.{h,m}"
+    ]
+  },
+  "libraries": "z",
+  "frameworks": [
+    "UIKit",
+    "CoreFoundation",
+    "QuartzCore",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreText",
+    "ImageIO",
+    "Accelerate"
+  ],
+  "vendored_frameworks": "YYCategories.framework",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」",
+  "subspecs": [
+    {
+      "name": "no-arc",
+      "requires_arc": false,
+      "source_files": [
+        "YYCategories/Foundation/NSObject+YYAddForARC.{h,m}",
+        "YYCategories/Foundation/NSThread+YYAdd.{h,m}"
+      ]
+    }
+  ]
+}
